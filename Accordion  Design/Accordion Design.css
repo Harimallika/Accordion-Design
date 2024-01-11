@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(204, 204, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accordion-container{
+    width: 50%;
+    height: auto;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+    padding: 30px;
+    /* gap: 20px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.accordion-container h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.accordion-item{
+    width: auto;
+    height: auto;
+    background: pink;
+    font-size: 15px;
+    font-weight: 400;
+    /* gap: 20px; */
+}
+.accordion-item:nth-child(3){
+    background: lightblue;
+}
+.accordion-item:nth-child(3) .item-header .item-icon:hover{
+    width: auto;
+    height: 30px;
+    background: lightcoral;
+    border-radius: 5px;
+    border: none;
+}
+.accordion-item:nth-child(4){
+    background: lightgreen;
+}
+.accordion-item:nth-child(4) .item-header .item-icon:hover{
+    width: auto;
+    height: 30px;
+    background: lightskyblue;
+    border-radius: 5px;
+    border: none;
+}
+.accordion-item:nth-child(5){
+    background: lightseagreen;
+}
+.accordion-item:nth-child(5) .item-header .item-icon:hover{
+    width: auto;
+    height: 30px;
+    background: lightgrey;
+    border-radius: 5px;
+    border: none;
+}
+.item-header{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20px; */
+    /* margin: 20px; */
+    /* padding: 10px; */
+    /* background: red; */
+}
+.item-header .item-question{
+    padding: 10px;
+
+}
+.item-header .item-icon{
+    font-size: 25px;
+    font-weight: 300;
+    padding: 0;
+    margin: 10px;
+}
+.item-header .item-icon:hover{
+    width: auto;
+    height: 30px;
+    background: lightgreen;
+    border-radius: 5px;
+    border: none;
+}
+.item-content{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: none;
+}
+ .item-content .item-answer{
+    font-size: 13px;
+    font-weight: 300;
+}
+.item-content.show {
+    display: block;
+}
